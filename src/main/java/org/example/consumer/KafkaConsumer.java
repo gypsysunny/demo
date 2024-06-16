@@ -12,8 +12,8 @@ import lombok.extern.slf4j.Slf4j;
 /**
  * 消费者
  *
- * @author austin-brant
- * @since 2019/7/15 19:58
+ * @author
+ * @since
  */
 @Slf4j
 @Component

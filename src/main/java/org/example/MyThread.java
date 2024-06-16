@@ -7,8 +7,8 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author: crush
- * @Date: 2021-08-06 22:17
+ * @Author:
+ * @Date:
  * version 1.0
  * ApplicationRunner:
  * 用于指示 bean 在包含在SpringApplication时应该运行的SpringApplication 。 

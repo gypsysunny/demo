@@ -3,7 +3,7 @@ package org.example.annotation;
 import java.lang.annotation.*;
 
 /**
- * @author pdai
+ * @author
  */
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
