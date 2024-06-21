@@ -20,8 +20,8 @@ import org.springframework.kafka.core.ProducerFactory;
 import org.springframework.kafka.listener.ContainerProperties;
 
 /**
- * @author austin-brant
- * @since 2019/7/15 21:45
+ * @author
+ * @since
  */
 @Configuration
 @EnableKafka
@@ -83,6 +83,7 @@ public class KafkaConfig {
         configs.put(ProducerConfig.BATCH_SIZE_CONFIG, producerBatchSize);
         configs.put(ProducerConfig.LINGER_MS_CONFIG, producerLingerMs);
         configs.put(ProducerConfig.BUFFER_MEMORY_CONFIG, producerBufferMemory);
+        configs.put(ProducerConfig.PARTITIONER_CLASS_CONFIG,"org.example.config.CustomizePartitioner");
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         return new DefaultKafkaProducerFactory<String, String>(configs);
